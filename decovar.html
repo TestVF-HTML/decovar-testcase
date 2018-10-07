@@ -5,38 +5,28 @@
 	<!--<meta charset="utf-8">-->
 	<style>
 	@font-face {
-		src: url('DecovarAlpha-VF.subset.ttf') format("truetype");
-		font-family: "DecovarAlpha1";
-	}
-	
-
-	@font-face {
 		src: url('DecovarAlpha-VF.ttf') format("truetype");
-		font-family: "DecovarAlpha2";
+		font-family: "DecovarAlpha";
+	}
+	@font-face {
+		src: url('DecovarAlpha-VF-subset.ttf') format("truetype");
+		font-family: "DecovarAlpha-subset";
 	}
 	
 	
-	
-	.DecovarAlpha1 {
-		font-family: "DecovarAlpha1";
+	#abc {
+		font-family: "DecovarAlpha";
 		font-size: 180px;
 		text-align: center;
 		padding-top: 20px;
-		margin-top: 0px;
 		font-variation-settings: "BLDA" 0, "TRMD" 342, "TRMC" 432.524, "SKLD" 432.524, "TRML" 536.688, "SKLA" 493.286, "TRMF" 0, "TRMK" 0, "BLDB" 0, "WMX2" 0, "TRMB" 0, "TRMA" 0, "SKLB" 0, "TRMG" 0, "TRME" 0;
-		background-color: rgb(76, 34, 179);
-		color: #FF0000;
-	}
+		background-color: While;
+		color: rgb(76, 34, 179);
 
-	.DecovarAlpha2 {
-		font-family: "DecovarAlpha2";
-		font-size: 180px;
-		text-align: center;
-		padding-top: 20px;
-		margin-top: 0px;
-		font-variation-settings: "BLDA" 0, "TRMD" 342, "TRMC" 432.524, "SKLD" 432.524, "TRML" 536.688, "SKLA" 493.286, "TRMF" 0, "TRMK" 0, "BLDB" 0, "WMX2" 0, "TRMB" 0, "TRMA" 0, "SKLB" 0, "TRMG" 0, "TRME" 0;
-		background-color: rgb(76, 34, 179);
-		color: #FFFFFF;
+	}
+	
+	p {
+		font-family: "DecovarAlpha";
 	}
 	
 </style>
@@ -45,63 +35,160 @@
 </head>
 
 <body>
-	<div style="width: 100%;height: 100% ">
-		<div style="background-color: #009ED8 ;float: left;">
-			<div style="width: 100%;height: 100%;">
-			<table border="0" style="float: left;" > 
-				<tr> <td><input class="slider"	value =0 type=range min=0 max=1000 onchange="FT(0)" ></td></tr>
-				<tr>	<td><input class = "slider1" value =342 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr><td>	<input class="slider2" value =432.524 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-				<tr>	<td><input class = "slider3"value =432.524 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr>	<td><input class="slider4" value =536.688 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-				<tr><td>	<input class = "slider5" value =493.286 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr><td>	<input class="slider6" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-				<tr><td>	<input class = "slider7" value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr><td>	<input class="slider8" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-				<tr><td>	<input class = "slider9"value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr><td>	<input class="slider10"value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-				<tr><td>	<input class = "slider11"value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr><td>	<input class="slider12" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-				<tr><td>	<input class = "slider13" value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr><td>	<input class="slider14" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-			</table>
+	<div>
+        <input type="checkbox" id="toggle-opentype" checked>Show original(A)</button>
+        <input type="checkbox" id="toggle-web">Show subset(S)</button>
+    </div>
 
-			<table border="0" style="float: right;"> 
-				<tr> <td><input class="slider0"	value =0 type=range min=0 max=1000 onchange="FT(0)" ></td></tr>
-				<tr>	<td><input class = "slider01" value =342 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr><td>	<input class="slider02" value =432.524 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-				<tr>	<td><input class = "slider03"value =432.524 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr>	<td><input class="slider04" value =536.688 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-				<tr><td>	<input class = "slider05" value =493.286 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr><td>	<input class="slider06" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-				<tr><td>	<input class = "slider07" value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr><td>	<input class="slider08" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-				<tr><td>	<input class = "slider09"value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr><td>	<input class="slider010"value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-				<tr><td>	<input class = "slider011"value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr><td>	<input class="slider012" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-				<tr><td>	<input class = "slider013" value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
-				<tr><td>	<input class="slider014" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
-			</table>
+	<div>
+		<div style="width: 20%; float: left;">
+			<table>
+				<tr>
+					<tr>
+						<th 
+							colspan="2" style="float: left">Inline:
+						</th>
+						<th>
+							<input class="slider" value =0 type=range min=0 max=1000 onchange="setvalue()" > 
+						</th>
+						<th>
+							<input class ="txt" type="text" id="txt_0" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
 
+					<tr>
+						<th colspan="2" style="float: left">Shearded:
+						</th>
+						<th><input class="slider1" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt1" type="text" id="txt_1" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Rounded Slab:
+						</th>
+						<th><input class="slider2" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt2" type="text" id="txt_2" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Stripes:
+						</th>
+						<th><input class="slider3" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt3" type="text" id="txt_3" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Worm Terminal:
+						</th>
+						<th><input class="slider4" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt4" type="text" id="txt_4" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Inline Skeleton:
+						</th>
+						<th><input class="slider5" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt5" type="text" id="txt_5" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Open Inline Terminal:
+						</th>
+						<th><input class="slider6" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt6" type="text" id="txt_6" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Inline Terminal:
+						</th>
+						<th><input class="slider7" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt7" type="text" id="txt_7" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Worm:
+						</th>
+						<th><input class="slider8" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt8" type="text" id="txt_8" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Weight:
+						</th>
+						<th><input class="slider9" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt9" type="text" id="txt_9" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Flared:
+						</th>
+						<th><input class="slider10" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt10" type="text" id="txt_10" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Rounded:
+						</th>
+						<th><input class="slider11" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt11" type="text" id="txt_11" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Worm Skeleton:
+						</th>
+						<th><input class="slider12" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt12" type="text" id="txt_12" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Slab:
+						</th>
+						<th><input class="slider13" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt13" type="text" id="txt_13" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+					<tr>
+						<th colspan="2" style="float: left">Bifurcated:
+						</th>
+						<th><input class="slider14" value =0 type=range min=0 max=1000 onchange="FT(0)" > </th>
+						<th>
+							<input class ="txt14" type="text" id="txt_14" value= "0" size = "5" onchange="FT(0)">
+						</th>
+					</tr>
+
+				</tr>
+
+			</table>
 		</div>
-		</div>
-		//
-		<div align="center" style="width: 85%" >
-			<p class='DecovarAlpha1' id="abc" style="float: right ; visibility:visible; " contenteditable="true" >
-				DECOVAR
+		<div style= "width: 80%; float: right;">
+			<p class='DecovarAlpha' id="abc" >
+				DECOVAR £
 			</p>
 		</div>
-
-		<div align="center" style="width: 85% ; visibility: visible;" contenteditable="true">
-			<p class='DecovarAlpha2' id="abc" style="float: right ; "  >
-				DECOVAR
+		<div style= "width: 80%; float: right;">
+			<p class='DecovarAlpha-subset' id="abc" style="color: red" >
+				DECOVAR £
 			</p>
 		</div>
-	</div>
-	<script>
 
 		
+	</div>
+
+	<script>
+
 		let input = document.querySelector('.slider');
 		let input1 = document.querySelector('.slider1');
 		let input2 = document.querySelector('.slider2');
@@ -117,29 +204,24 @@
 		let input12 = document.querySelector('.slider12');
 		let input13 = document.querySelector('.slider13');
 		let input14 = document.querySelector('.slider14');
+		let p = document.querySelector('.DecovarAlpha');
+		let p1 = document.querySelector('.DecovarAlpha-subset');
 
-		//
-		//
-			let input0 = document.querySelector('.slider0');
-		let input01 = document.querySelector('.slider01');
-		let input02 = document.querySelector('.slider02');
-		let input03 = document.querySelector('.slider03');
-		let input04 = document.querySelector('.slider04');
-		let input05 = document.querySelector('.slider05');
-		let input06 = document.querySelector('.slider06');
-		let input07 = document.querySelector('.slider07');
-		let input08 = document.querySelector('.slider08');
-		let input09 = document.querySelector('.slider09');
-		let input010 = document.querySelector('.slider010');
-		let input011 = document.querySelector('.slider011');
-		let input012 = document.querySelector('.slider012');
-		let input013 = document.querySelector('.slider013');
-		let input014 = document.querySelector('.slider014');
-
-		//
-
-		let p = document.querySelector('toggle-opentype');
-	let q = document.querySelector('toggle-web');
+		let text = document.querySelector('.txt');
+		let text1 = document.querySelector('.txt1');
+		let text2 = document.querySelector('.txt2');
+		let text3 = document.querySelector('.txt3');
+		let text4 = document.querySelector('.txt4');
+		let text5 = document.querySelector('.txt5');
+		let text6 = document.querySelector('.txt6');
+		let text7 = document.querySelector('.txt7');
+		let text8 = document.querySelector('.txt8');
+		let text9 = document.querySelector('.txt9');
+		let text10 = document.querySelector('.txt10');
+		let text11 = document.querySelector('.txt11');
+		let text12 = document.querySelector('.txt12');
+		let text13 = document.querySelector('.txt13');
+		let text14 = document.querySelector('.txt14');
 
 		input.addEventListener('input', e => {
 			setvalue();
@@ -200,112 +282,170 @@
 		input14.addEventListener('input', e => {
 			setvalue();
 		});
-//
 
-
-		input0.addEventListener('input', e => {
-			setvalue1();
+		text.addEventListener('input',e => {
+			settext();
 		});
 
-		input01.addEventListener('input', e => {
-			setvalue1();
+		text1.addEventListener('input',e => {
+			settext();
 		});
 
-		input02.addEventListener('input', e => {
-			setvalue1();
+		text2.addEventListener('input',e => {
+			settext();
 		});
 
-		input03.addEventListener('input', e => {
-			setvalue1();
+		text3.addEventListener('input',e => {
+			settext();
 		});
 
-		input04.addEventListener('input', e => {
-			setvalue1();
+		text4.addEventListener('input',e => {
+			settext();
 		});
 
-		input05.addEventListener('input', e => {
-			setvalue1();
+		text5.addEventListener('input',e => {
+			settext();
 		});
 
-		input06.addEventListener('input', e => {
-			setvalue1();
+		text6.addEventListener('input',e => {
+			settext();
 		});
 
-		input07.addEventListener('input', e => {
-			setvalue1();
+		text7.addEventListener('input',e => {
+			settext();
 		});
 
-		input08.addEventListener('input', e => {
-			setvalue1();
+		text8.addEventListener('input',e => {
+			settext();
 		});
 
-		input09.addEventListener('input', e => {
-			setvalue1();
+		text9.addEventListener('input',e => {
+			settext();
 		});
 
-		input010.addEventListener('input', e => {
-			setvalue1();
+		text10.addEventListener('input',e => {
+			settext();
 		});
 
-		input011.addEventListener('input', e => {
-			setvalue1();
+		text11.addEventListener('input',e => {
+			settext();
 		});
 
-		input012.addEventListener('input', e => {
-			setvalue1();
+		text12.addEventListener('input',e => {
+			settext();
 		});
 
-		input013.addEventListener('input', e => {
-			setvalue1();
+		text13.addEventListener('input',e => {
+			settext();
 		});
 
-		input014.addEventListener('input', e => {
-			setvalue1();
+		text14.addEventListener('input',e => {
+			settext();
 		});
-
-
-		p.addEventListener('input', e => {
-			check1();
-		});
-		q.addEventListener('input', e => {
-			check2();
-		});
-		let checkbox1=document.getElementById('.DecovarAlpha1');
-		let checkbox2=document.getElementById('.DecovarAlpha2');
-
-
-		function check1() {
-			if(p.checked==false)
-		{
-                    checkbox1.style.visibility = "visible";
-                } else {
-                    checkbox1.style.visibility = "hidden";
-                }
-		}
-
-		function check2() {
-			if(q.checked==false)
-		{
-                    checkbox2.style.visibility = "visible";
-                } else {
-                    checkbox2.style.visibility = "hidden";
-                }
-		}
-
-
 
 		function setvalue() {
 	// body...
-	p.style.fontVariationSettings = `"BLDA" ${input.value}, "TRMD" ${input1.value}, "TRMC" ${input2.value}, "SKLD" ${input3.value}, "TRML" ${input4.value}, "SKLA" ${input5.value}, "TRMF" ${input6.value}, "TRMK" ${input7.value}, "BLDB" ${input8.value}, "WMX2" ${input9.value}, "TRMB" ${input10.value}, "TRMA" ${input11.value}, "SKLB" ${input12.value}, "TRMG" ${input13.value}, "TRME" ${input14.value}`
-	p.style.color
-}
+			var tepm;
+			var tepm1;
+			var tepm2;
+			var tepm3;
+			var tepm4;
+			var tepm5;
+			var tepm6;
+			var tepm7;
+			var tepm8;
+			var tepm9;
+			var tepm10;
+			var tepm11;
+			var tepm12;
+			var tepm13;
+			var tepm14;
+			document.getElementById('txt_0').value =input.value;
+			tepm = input.value;
+			document.getElementById('txt_1').value =input1.value;
+			tepm1 = input1.value;
+			document.getElementById('txt_2').value =input2.value;
+			tepm2 = input2.value;
+			document.getElementById('txt_3').value =input3.value;
+			tepm3 = input3.value;
+			document.getElementById('txt_4').value =input4.value;
+			tepm4 = input4.value;
+			document.getElementById('txt_5').value =input5.value;
+			tepm5 = input5.value;
+			document.getElementById('txt_6').value =input6.value;
+			tepm6 = input6.value;
+			document.getElementById('txt_7').value =input7.value;
+			tepm7 = input7.value;
+			document.getElementById('txt_8').value =input8.value;
+			tepm8 = input8.value;
+			document.getElementById('txt_9').value =input9.value;
+			tepm9 = input9.value;
+			document.getElementById('txt_10').value =input10.value;
+			tepm10 = input10.value;
+			document.getElementById('txt_11').value =input11.value;
+			tepm11 = input11.value;
+			document.getElementById('txt_12').value =input12.value;
+			tepm12 = input12.value;
+			document.getElementById('txt_13').value =input13.value;
+			tepm13 = input13.value;
+			document.getElementById('txt_14').value =input14.value;
+			tepm14 = input14.value;
 
-function setvalue1() {
-	// body...
-	q.style.fontVariationSettings = `"BLDA" ${input0.value}, "TRMD" ${input01.value}, "TRMC" ${input02.value}, "SKLD" ${input03.value}, "TRML" ${input04.value}, "SKLA" ${input05.value}, "TRMF" ${input06.value}, "TRMK" ${input07.value}, "BLDB" ${input08.value}, "WMX2" ${input09.value}, "TRMB" ${input010.value}, "TRMA" ${input011.value}, "SKLB" ${input012.value}, "TRMG" ${input013.value}, "TRME" ${input014.value}`
-	p.style.color
-}
-
+			p.style.fontVariationSettings = `"BLDA" ${tepm}, "TRMD" ${tepm1}, "TRMC" ${tepm2}, "SKLD" ${tepm3}, "TRML" ${tepm4}, "SKLA" ${tepm5}, "TRMF" ${tepm6}, "TRMK" ${tepm7}, "BLDB" ${tepm8}, "WMX2" ${tepm9}, "TRMB" ${tepm10}, "TRMA" ${tepm11}, "SKLB" ${tepm12}, "TRMG" ${tepm13}, "TRME" ${tepm14}`
+		
+			p1.style.fontVariationSettings = `"BLDA" ${tepm}, "TRMD" ${tepm1}, "TRMC" ${tepm2}, "SKLD" ${tepm3}, "TRML" ${tepm4}, "SKLA" ${tepm5}, "TRMF" ${tepm6}, "TRMK" ${tepm7}, "BLDB" ${tepm8}, "WMX2" ${tepm9}, "TRMB" ${tepm10}, "TRMA" ${tepm11}, "SKLB" ${tepm12}, "TRMG" ${tepm13}, "TRME" ${tepm14}`
+		}
+		function settext(){
+			var tepm;
+			var tepm1;
+			var tepm2;
+			var tepm3;
+			var tepm4;
+			var tepm5;
+			var tepm6;
+			var tepm7;
+			var tepm8;
+			var tepm9;
+			var tepm10;
+			var tepm11;
+			var tepm12;
+			var tepm13;
+			var tepm14;
+			input.value = document.getElementById('txt_0').value;
+			tepm = input.value;
+			input1.value = document.getElementById('txt_1').value;
+			tepm1 = input1.value;
+			input2.value = document.getElementById('txt_2').value;
+			tepm2 = input2.value;
+			input3.value = document.getElementById('txt_3').value;
+			tepm3 = input3.value;
+			input4.value = document.getElementById('txt_4').value;
+			tepm4 = input4.value;
+			input5.value = document.getElementById('txt_5').value;
+			tepm5 = input5.value;
+			input6.value = document.getElementById('txt_6').value;
+			tepm6 = input6.value;
+			input7.value = document.getElementById('txt_7').value;
+			tepm7 = input7.value;
+			input8.value = document.getElementById('txt_8').value;
+			tepm8 = input8.value;
+			input9.value = document.getElementById('txt_9').value;
+			tepm9 = input9.value;
+			input10.value = document.getElementById('txt_10').value;
+			tepm10 = input10.value;
+			input11.value = document.getElementById('txt_11').value;
+			tepm11 = input11.value;
+			input12.value = document.getElementById('txt_12').value;
+			tepm12 = input12.value;
+			input13.value = document.getElementById('txt_13').value;
+			tepm13 = input13.value;
+			input14.value = document.getElementById('txt_14').value;
+			tepm14 = input14.value;
+			p.style.fontVariationSettings = `"BLDA" ${tepm}, "TRMD" ${tepm1}, "TRMC" ${tepm2}, "SKLD" ${tepm3}, "TRML" ${tepm4}, "SKLA" ${tepm5}, "TRMF" ${tepm6}, "TRMK" ${tepm7}, "BLDB" ${tepm8}, "WMX2" ${tepm9}, "TRMB" ${tepm10}, "TRMA" ${tepm11}, "SKLB" ${tepm12}, "TRMG" ${tepm13}, "TRME" ${tepm14}`
+		
+			p1.style.fontVariationSettings = `"BLDA" ${tepm}, "TRMD" ${tepm1}, "TRMC" ${tepm2}, "SKLD" ${tepm3}, "TRML" ${tepm4}, "SKLA" ${tepm5}, "TRMF" ${tepm6}, "TRMK" ${tepm7}, "BLDB" ${tepm8}, "WMX2" ${tepm9}, "TRMB" ${tepm10}, "TRMA" ${tepm11}, "SKLB" ${tepm12}, "TRMG" ${tepm13}, "TRME" ${tepm14}`
+		}
+		
 
 </script>
 </body>
