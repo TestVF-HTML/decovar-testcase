@@ -3,25 +3,72 @@
 
 <head>
 	<!--<meta charset="utf-8">-->
+	<meta http-equiv="content-language" content="ja">
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <script src="./jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+
+            $(document).keypress(function(e) {
+                if (e.which == 97) { <!-- 'a' -->
+                    $('#toggle-opentype').click();
+
+                }else if(e.which == 115){ <!-- 's' -->
+                    $('#toggle-web').click();
+                }
+            });
+            $('#toggle-opentype').click(function() {
+                var checked = $(this).prop('checked');
+                var layer = $("#opentype")[0];
+                if (checked) {
+                    layer.style.visibility = "visible";
+                } else {
+                    layer.style.visibility = "hidden";
+                }
+            });
+            $('#toggle-web').click(function() {
+                var checked = $(this).prop('checked');
+                var layer = $("#web")[0];
+                if (checked) {
+                    layer.style.visibility = "visible";
+                } else {
+                    layer.style.visibility = "hidden";
+                }
+            });
+        });
+    </script>
+
+
 	<style>
 	@font-face {
 		src: url('DecovarAlpha-VF.ttf') format("truetype");
 		font-family: "DecovarAlpha";
 	}
 	@font-face {
-		src: url('DecovarAlpha-VF-subset.ttf') format("truetype");
+		src: url('DecovarAlpha-VF-hb-subset.ttf') format("truetype");
 		font-family: "DecovarAlpha-subset";
 	}
 	
 	
 	#abc {
 		font-family: "DecovarAlpha";
-		font-size: 180px;
+		font-size: 100px;
 		text-align: center;
-		padding-top: 20px;
+		padding-top: 5px;
 		font-variation-settings: "BLDA" 0, "TRMD" 342, "TRMC" 432.524, "SKLD" 432.524, "TRML" 536.688, "SKLA" 493.286, "TRMF" 0, "TRMK" 0, "BLDB" 0, "WMX2" 0, "TRMB" 0, "TRMA" 0, "SKLB" 0, "TRMG" 0, "TRME" 0;
 		background-color: While;
 		color: rgb(76, 34, 179);
+
+	}
+
+	#abc-sb {
+		font-family: "DecovarAlpha-subset";
+		font-size: 100px;
+		text-align: center;
+		padding-top: 5px;
+		font-variation-settings: "BLDA" 0, "TRMD" 342, "TRMC" 432.524, "SKLD" 432.524, "TRML" 536.688, "SKLA" 493.286, "TRMF" 0, "TRMK" 0, "BLDB" 0, "WMX2" 0, "TRMB" 0, "TRMA" 0, "SKLB" 0, "TRMG" 0, "TRME" 0;
+		background-color: While;
+		color: deeppink;
 
 	}
 	
@@ -173,19 +220,21 @@
 
 			</table>
 		</div>
-		<div style= "width: 80%; float: right;">
-			<p class='DecovarAlpha' id="abc" >
-				DECOVAR £
-			</p>
+			<div id="opentype" class="normal" style="position:absolute; left:160px; top:20px;">
+				<div style= "width: 80%; float: right;">
+					<p class='DecovarAlpha' id="abc" >
+						ABCDEFGH<br>IJKLMNO<br>PQRSTUVW<br>XYZ-.,=
+					</p>
+				</div>
+			 </div>
+			<div id="web" class="normal_web" style="visibility: hidden;position:absolute; left:160px; top:20px;">
+				 <div style= "width: 80%; float: right;">
+					<p class='DecovarAlpha-subset' id="abc-sb" >
+						ABCDEFGH<br>IJKLMNO<br>PQRSTUVW<br>XYZ-.,=
+					</p>
+				</div>	
+			</div>
 		</div>
-		<div style= "width: 80%; float: right;">
-			<p class='DecovarAlpha-subset' id="abc" style="color: red" >
-				DECOVAR £
-			</p>
-		</div>
-
-		
-	</div>
 
 	<script>
 
