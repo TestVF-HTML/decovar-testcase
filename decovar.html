@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+
+<head>
+	<!--<meta charset="utf-8">-->
+	<style>
+	@font-face {
+		src: url('DecovarAlpha-VF.subset.ttf') format("truetype");
+		font-family: "DecovarAlpha1";
+	}
+	
+
+	@font-face {
+		src: url('DecovarAlpha-VF.ttf') format("truetype");
+		font-family: "DecovarAlpha2";
+	}
+	
+	
+	
+	.DecovarAlpha1 {
+		font-family: "DecovarAlpha1";
+		font-size: 180px;
+		text-align: center;
+		padding-top: 20px;
+		margin-top: 0px;
+		font-variation-settings: "BLDA" 0, "TRMD" 342, "TRMC" 432.524, "SKLD" 432.524, "TRML" 536.688, "SKLA" 493.286, "TRMF" 0, "TRMK" 0, "BLDB" 0, "WMX2" 0, "TRMB" 0, "TRMA" 0, "SKLB" 0, "TRMG" 0, "TRME" 0;
+		background-color: rgb(76, 34, 179);
+		color: #FF0000;
+	}
+
+	.DecovarAlpha2 {
+		font-family: "DecovarAlpha2";
+		font-size: 180px;
+		text-align: center;
+		padding-top: 20px;
+		margin-top: 0px;
+		font-variation-settings: "BLDA" 0, "TRMD" 342, "TRMC" 432.524, "SKLD" 432.524, "TRML" 536.688, "SKLA" 493.286, "TRMF" 0, "TRMK" 0, "BLDB" 0, "WMX2" 0, "TRMB" 0, "TRMA" 0, "SKLB" 0, "TRMG" 0, "TRME" 0;
+		background-color: rgb(76, 34, 179);
+		color: #FFFFFF;
+	}
+	
+</style>
+
+
+</head>
+
+<body>
+	<div style="width: 100%;height: 100% ">
+		<div style="background-color: #009ED8 ;float: left;">
+			<div style="width: 100%;height: 100%;">
+			<table border="0" style="float: left;" > 
+				<tr> <td><input class="slider"	value =0 type=range min=0 max=1000 onchange="FT(0)" ></td></tr>
+				<tr>	<td><input class = "slider1" value =342 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr><td>	<input class="slider2" value =432.524 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+				<tr>	<td><input class = "slider3"value =432.524 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr>	<td><input class="slider4" value =536.688 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+				<tr><td>	<input class = "slider5" value =493.286 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr><td>	<input class="slider6" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+				<tr><td>	<input class = "slider7" value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr><td>	<input class="slider8" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+				<tr><td>	<input class = "slider9"value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr><td>	<input class="slider10"value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+				<tr><td>	<input class = "slider11"value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr><td>	<input class="slider12" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+				<tr><td>	<input class = "slider13" value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr><td>	<input class="slider14" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+			</table>
+
+			<table border="0" style="float: right;"> 
+				<tr> <td><input class="slider0"	value =0 type=range min=0 max=1000 onchange="FT(0)" ></td></tr>
+				<tr>	<td><input class = "slider01" value =342 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr><td>	<input class="slider02" value =432.524 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+				<tr>	<td><input class = "slider03"value =432.524 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr>	<td><input class="slider04" value =536.688 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+				<tr><td>	<input class = "slider05" value =493.286 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr><td>	<input class="slider06" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+				<tr><td>	<input class = "slider07" value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr><td>	<input class="slider08" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+				<tr><td>	<input class = "slider09"value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr><td>	<input class="slider010"value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+				<tr><td>	<input class = "slider011"value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr><td>	<input class="slider012" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+				<tr><td>	<input class = "slider013" value =0 type=range min=0 max=1000 onchange="FT(0)"></tr></td>
+				<tr><td>	<input class="slider014" value =0 type=range min=0 max=1000 onchange="FT(0)" ></tr></td>
+			</table>
+
+		</div>
+		</div>
+		//
+		<div align="center" style="width: 85%" >
+			<p class='DecovarAlpha1' id="abc" style="float: right ; visibility:visible; " contenteditable="true" >
+				DECOVAR
+			</p>
+		</div>
+
+		<div align="center" style="width: 85% ; visibility: visible;" contenteditable="true">
+			<p class='DecovarAlpha2' id="abc" style="float: right ; "  >
+				DECOVAR
+			</p>
+		</div>
+	</div>
+	<script>
+
+		
+		let input = document.querySelector('.slider');
+		let input1 = document.querySelector('.slider1');
+		let input2 = document.querySelector('.slider2');
+		let input3 = document.querySelector('.slider3');
+		let input4 = document.querySelector('.slider4');
+		let input5 = document.querySelector('.slider5');
+		let input6 = document.querySelector('.slider6');
+		let input7 = document.querySelector('.slider7');
+		let input8 = document.querySelector('.slider8');
+		let input9 = document.querySelector('.slider9');
+		let input10 = document.querySelector('.slider10');
+		let input11 = document.querySelector('.slider11');
+		let input12 = document.querySelector('.slider12');
+		let input13 = document.querySelector('.slider13');
+		let input14 = document.querySelector('.slider14');
+
+		//
+		//
+			let input0 = document.querySelector('.slider0');
+		let input01 = document.querySelector('.slider01');
+		let input02 = document.querySelector('.slider02');
+		let input03 = document.querySelector('.slider03');
+		let input04 = document.querySelector('.slider04');
+		let input05 = document.querySelector('.slider05');
+		let input06 = document.querySelector('.slider06');
+		let input07 = document.querySelector('.slider07');
+		let input08 = document.querySelector('.slider08');
+		let input09 = document.querySelector('.slider09');
+		let input010 = document.querySelector('.slider010');
+		let input011 = document.querySelector('.slider011');
+		let input012 = document.querySelector('.slider012');
+		let input013 = document.querySelector('.slider013');
+		let input014 = document.querySelector('.slider014');
+
+		//
+
+		let p = document.querySelector('toggle-opentype');
+	let q = document.querySelector('toggle-web');
+
+		input.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input1.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input2.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input3.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input4.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input5.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input6.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input7.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input8.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input9.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input10.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input11.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input12.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input13.addEventListener('input', e => {
+			setvalue();
+		});
+
+		input14.addEventListener('input', e => {
+			setvalue();
+		});
+//
+
+
+		input0.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input01.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input02.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input03.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input04.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input05.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input06.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input07.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input08.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input09.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input010.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input011.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input012.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input013.addEventListener('input', e => {
+			setvalue1();
+		});
+
+		input014.addEventListener('input', e => {
+			setvalue1();
+		});
+
+
+		p.addEventListener('input', e => {
+			check1();
+		});
+		q.addEventListener('input', e => {
+			check2();
+		});
+		let checkbox1=document.getElementById('.DecovarAlpha1');
+		let checkbox2=document.getElementById('.DecovarAlpha2');
+
+
+		function check1() {
+			if(p.checked==false)
+		{
+                    checkbox1.style.visibility = "visible";
+                } else {
+                    checkbox1.style.visibility = "hidden";
+                }
+		}
+
+		function check2() {
+			if(q.checked==false)
+		{
+                    checkbox2.style.visibility = "visible";
+                } else {
+                    checkbox2.style.visibility = "hidden";
+                }
+		}
+
+
+
+		function setvalue() {
+	// body...
+	p.style.fontVariationSettings = `"BLDA" ${input.value}, "TRMD" ${input1.value}, "TRMC" ${input2.value}, "SKLD" ${input3.value}, "TRML" ${input4.value}, "SKLA" ${input5.value}, "TRMF" ${input6.value}, "TRMK" ${input7.value}, "BLDB" ${input8.value}, "WMX2" ${input9.value}, "TRMB" ${input10.value}, "TRMA" ${input11.value}, "SKLB" ${input12.value}, "TRMG" ${input13.value}, "TRME" ${input14.value}`
+	p.style.color
+}
+
+function setvalue1() {
+	// body...
+	q.style.fontVariationSettings = `"BLDA" ${input0.value}, "TRMD" ${input01.value}, "TRMC" ${input02.value}, "SKLD" ${input03.value}, "TRML" ${input04.value}, "SKLA" ${input05.value}, "TRMF" ${input06.value}, "TRMK" ${input07.value}, "BLDB" ${input08.value}, "WMX2" ${input09.value}, "TRMB" ${input010.value}, "TRMA" ${input011.value}, "SKLB" ${input012.value}, "TRMG" ${input013.value}, "TRME" ${input014.value}`
+	p.style.color
+}
+
+
+</script>
+</body>
+
+</html>
